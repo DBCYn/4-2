@@ -1,0 +1,147 @@
+/* 全局样式 */
+body {
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* 主容器 */
+.news-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* 标题样式 */
+.main-title {
+    font-size: 28px;
+    color: #222;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.sub-title {
+    font-size: 22px;
+    color: #444;
+    margin-top: 0;
+    text-align: center;
+    font-weight: normal;
+}
+
+/* 分隔线样式 */
+.title-divider {
+    border: none;
+    height: 2px;
+    background-color: #e0e0e0;
+    margin: 20px 0;
+}
+
+/* 内容区域布局 */
+.content-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.left-news {
+    flex: 2;
+}
+
+.right-recommend {
+    flex: 1;
+}
+
+/* 左侧新闻项样式 */
+.news-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed #ddd;
+}
+
+.news-item h4 {
+    font-size: 18px;
+    margin: 0 0 15px 0;
+    color: #1a73e8;
+    line-height: 1.4;
+}
+
+.news-images {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+}
+
+.news-images img {
+    width: 48%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.news-images img:hover {
+    transform: scale(1.02);
+}
+
+.author {
+    font-size: 14px;
+    color: #777;
+    display: block;
+    text-align: right;
+    font-style: italic;
+}
+
+/* 右侧推荐样式 */
+.recommend-title {
+    font-size: 20px;
+    color: #d32f2f;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d32f2f;
+    margin-top: 0;
+}
+
+.recommend-item {
+    margin-bottom: 25px;
+}
+
+.recommend-item a {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    transition: color 0.3s;
+}
+
+.recommend-item a:hover {
+    color: #d32f2f;
+    text-decoration: underline;
+}
+
+.recommend-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .news-images {
+        flex-direction: column;
+    }
+    
+    .news-images img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
